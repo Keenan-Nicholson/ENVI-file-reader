@@ -1,9 +1,9 @@
-The ENVI file reader has not been updated in quite some time however it is used as a dependency in a lot of hyperspectral applications.
+The ENVI file reader has not been updated in quite some time despite it being a dependency in a lot of hyperspectral applications.
 
 With that in mind I have updated the code with the following:
 
 - a check for the presence of geographical information so that it works with non-georeferenced imagery, and
-- inserted `machine` into the `bil ` and `bip` interleave cases `fread` calls to handle big-endian ordered data.
+- inserted `machine` into the `fread` calls for the `bil` and `bip` interleave cases to handle big-endian ordered data.
 
 ---
 
